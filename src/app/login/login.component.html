@@ -1,0 +1,69 @@
+<!-- <p>login works!</p> -->
+
+<!-- <div fxLayoutAlign="center center" fxFlexFill>
+    <mat-card fxFlex="25" style="background-color: #CDCAD1;"> -->
+        <!-- <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Favorite food</mat-label>
+              <input matInput placeholder="Ex. Pizza" value="Sushi">
+            </mat-form-field>
+          <br>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Leave a comment</mat-label>
+              <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+            </mat-form-field>
+          </form>           -->
+          <!-- <mat-toolbar color="primary" class="main-div">LogIn Page</mat-toolbar>
+          <form fxLayoutAlign="stretch" fxLayout="column">
+            <mat-form-field>
+              <mat-label>Username</mat-label>
+              <input matInput placeholder="Username">
+            </mat-form-field>
+          <br>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Password">
+          </mat-form-field>
+          <button mat-raised-button type="submit">LogIn</button>
+          </form>
+    </mat-card>
+</div> -->
+
+<!-- <p>I'm here</p> -->
+
+<div>
+  <mat-card class="card">
+    <mat-card-title>
+      Login 
+    </mat-card-title>
+
+    <mat-card-content>
+
+      <form (ngSubmit)="onSubmit()">
+
+        <ng-template ngIf=""></ng-template>
+
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput type="email" name="email" [(ngModel)]="email" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" name="password" [(ngModel)]="password" required>
+        </mat-form-field>
+
+        <br>
+
+        <button mat-raised-button color="primary" type="submit">Login</button>
+      </form>
+
+        
+
+    </mat-card-content>
+    <button ngClass="btn-register" mat-raised-button routerLink="/register">Create new Account</button>    
+    
+  </mat-card>
+  
+</div>
+

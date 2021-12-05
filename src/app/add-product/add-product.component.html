@@ -1,0 +1,17 @@
+<!-- <p>add-product works!</p> -->
+
+<mat-card ngClass="card">
+    <mat-card-title>Add Product</mat-card-title>
+    <mat-card-content>
+        <form class="example-form" (ngSubmit)="onSubmit()">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Product</mat-label>
+              <input matInput [(ngModel)]="p_name" placeholder="" name="product" >
+            </mat-form-field>
+            
+          </form>
+          <button mat-raised-button (click)="onClick()">Add</button>
+          
+    </mat-card-content>
+</mat-card>
+

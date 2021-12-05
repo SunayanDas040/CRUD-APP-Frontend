@@ -1,0 +1,17 @@
+<!-- <p>cart works!</p> -->
+<app-add-product (addProduct)="addItem($event)"></app-add-product>
+<mat-card ngClass="card">
+    <mat-card-title>Product Cart</mat-card-title>
+    <div *ngIf="this.products.length === 0; else elseBlock">No Products to display</div>
+    <ng-template #elseBlock>
+        <mat-card-content *ngFor="let product of products; index as i" style="margin-left: 10rem; margin-right: 10rem;">
+            <app-cart-item [product]="product" ngClass="card-body" (deleteProduct)="productDelete($event)"></app-cart-item>
+        </mat-card-content>
+
+    </ng-template>
+    
+</mat-card>
+
+  
+  
+

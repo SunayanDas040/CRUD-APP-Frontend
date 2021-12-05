@@ -1,0 +1,9 @@
+.card {
+    text-align: center;
+}
+li {
+    display: inline;
+}
+.card-body {
+    width: 50%;
+}

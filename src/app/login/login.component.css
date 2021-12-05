@@ -1,0 +1,15 @@
+/* .main-div mat-card {
+    padding: 0px;
+} */
+
+.btn-register {
+    background-color: green;
+}
+
+.card {
+    height: 50%;
+    width: 500px;
+    margin: auto;
+    background-color: cadetblue;
+    margin-top: 100px;
+}
